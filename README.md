@@ -52,15 +52,17 @@ use $**fetch** without having to resort to custom $**fetch** wrappers.
  - [**Laravel Octane**](https://laravel.com/docs/11.x/octane) supports 2 operating modes: Swoole (php extension) or Roadrunner
 
 ## Installation
-1. clone repository
+1. `clone repository`
 2. `composer install`
-3. `cp .env.example .env && php artisan key:generate && php artisan storage:link`
-4. `php artisan migrate`
-5. `php artisan db:seed`
-6. `php artisan octane:install`
-7. `php artisan octane:start --watch --port=8000 --host=127.0.0.1`
-8. `yarn install`
-9. `yarn dev`
+3. `mkdir -p tools/php-cs-fixer`
+4. `composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer`
+5. `cp .env.example .env && php artisan key:generate && php artisan storage:link`
+6. `php artisan migrate`
+7. `php artisan db:seed`
+8. `php artisan octane:install`
+9. `php artisan octane:start --watch --port=8000 --host=127.0.0.1`
+10. `yarn install`
+11. `yarn dev`
 
 ## Upgrade
 1. `npx nuxi upgrade`

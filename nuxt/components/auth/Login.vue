@@ -12,8 +12,8 @@ type Provider = {
 };
 
 const state = reactive({
-  email: "",
-  password: "",
+  email: "admin@mail.com",
+  password: "admin1234",
   remember: false,
 });
 

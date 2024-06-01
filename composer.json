@@ -17,7 +17,9 @@
         "laravel/socialite": "^5.12",
         "laravel/tinker": "^2.9",
         "league/flysystem-aws-s3-v3": "^3.24",
-        "spatie/laravel-permission": "^6.4"
+        "spatie/laravel-permission": "^6.4",
+        "spiral/roadrunner-cli": "^2.6.0",
+        "spiral/roadrunner-http": "^3.3.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",
