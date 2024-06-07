@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "serve": "cross-env PORT=3000 HOST=127.0.0.1 node .output/server/index.mjs",
+    "server": "cross-env PORT=3000 HOST=127.0.0.1 node .output/server/index.mjs",
+    "serve": "concurrently --names 'LARAVEL,NUXT' --prefix-colors 'yellow,blue' --kill-others 'php artisan octane:start --watch --port=8000 --host=127.0.0.1' 'nuxi dev'",
     "build": "nuxi cleanup && nuxi build",
     "cleanup": "nuxi cleanup",
     "dev": "nuxt dev --port=3000 --host=127.0.0.1",
@@ -26,5 +27,8 @@
     "nuxt-security": "^1.4.3",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
   }
 }
